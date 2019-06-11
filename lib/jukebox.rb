@@ -17,3 +17,16 @@ def help
 - play : lets you choose a song to play
 - exit : exits this program"
 end
+
+def play (songs)
+  puts "Please enter a song name or number:"
+  song = gets.chomp
+  if songs.include? (song)
+    puts "Playing <#{song}>"
+    return
+  end
+  if (1..songs.length).include?(song)
+    puts "Playing <#{songs[song - 1]}>"
+    return
+  end
+end
