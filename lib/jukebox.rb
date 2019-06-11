@@ -29,4 +29,5 @@ def play (songs)
     puts "Playing <#{songs[song - 1]}>"
     return
   end
+  puts "Invalid input, please try again"
 end
