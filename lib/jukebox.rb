@@ -29,7 +29,7 @@ def play (songs)
 
     puts "NUmber"
     if song.to_i >= 1 && song.to_i <= songs.size #(1..songs.length).include?(song)
-      puts "Playing <#{songs[song - 1]}>"
+      puts "Playing <#{songs[song.to_i - 1]}>"
       return
     end
 
