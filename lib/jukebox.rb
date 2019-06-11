@@ -19,8 +19,10 @@ def help
 end
 
 def play (songs)
+  
   puts "Please enter a song name or number:"
   song = gets.chomp
+
     if songs.include? (song)
       puts "Playing <#{song}>"
       return
@@ -34,5 +36,3 @@ def play (songs)
   puts "Invalid input, please try again"
 
 end
-
-play(songs)
