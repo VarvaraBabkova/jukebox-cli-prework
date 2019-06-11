@@ -10,7 +10,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def run
+def run (songs)
   help
   while true
     puts "Please enter a command:"
@@ -19,13 +19,13 @@ def run
       when "help"
         help
       when "play"
-        play
+        play (Songs)
       when "exit"
         exit_jukebox
         return
       when "list"
-        list
-      
+        list (songs)
+
     end #case
 
   end #while
