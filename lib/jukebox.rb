@@ -12,15 +12,9 @@ songs = [
 
 def run
   help
-
-
   while true
     puts "Please enter a command:"
     response = gets.chomp
-
-    if response == "exit"
-
-    end
     case response
       when "help"
         help
@@ -31,9 +25,8 @@ def run
         return
       when "list"
         list
-      else
       end
-    end
+    end #case
 
   end #while
 
