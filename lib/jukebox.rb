@@ -9,6 +9,11 @@ songs = [
   "Harry Chapin - Cats in the Cradle",
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
+def list (songs)
+  songs.each_with_index do |i|
+    puts i.to_s + ". " + songs[i]
+  end
+end
 
 def help
   puts "I accept the following commands:
@@ -19,7 +24,7 @@ def help
 end
 
 def play (songs)
-  
+
   puts "Please enter a song name or number:"
   song = gets.chomp
 
