@@ -9,8 +9,9 @@ songs = [
   "Harry Chapin - Cats in the Cradle",
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
+
 def list (songs)
-  songs.each_with_index do |i|
+  songs.each_index do |i|
     puts i.to_s + ". " + songs[i]
   end
 end
