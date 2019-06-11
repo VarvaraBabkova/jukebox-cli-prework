@@ -21,13 +21,11 @@ end
 def play (songs)
   puts "Please enter a song name or number:"
   song = gets.chomp
-  puts song
     if songs.include? (song)
       puts "Playing <#{song}>"
       return
     end
 
-    puts "NUmber"
     if song.to_i >= 1 && song.to_i <= songs.size #(1..songs.length).include?(song)
       puts "Playing <#{songs[song.to_i - 1]}>"
       return
