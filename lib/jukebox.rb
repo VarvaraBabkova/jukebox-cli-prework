@@ -10,6 +10,10 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def exit
+  puts "Goodbye"
+end
+
 def list (songs)
   songs.each_index do |i|
     puts i.to_s + ". " + songs[i]
