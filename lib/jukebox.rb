@@ -10,6 +10,35 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def run
+  help
+
+
+  while true
+    puts "Please enter a command:"
+    response = gets.chomp
+
+    if response == "exit"
+
+    end
+    case response
+      when "help"
+        help
+      when "play"
+        play
+      when "exit"
+        exit_jukebox
+        return
+      when "list"
+        list
+      else
+      end
+    end
+
+  end #while
+
+end #run
+
 def exit_jukebox
   puts "Goodbye"
 end
@@ -29,20 +58,15 @@ def help
 end
 
 def play (songs)
-
   puts "Please enter a song name or number:"
   song = gets.chomp
-
     if songs.include? (song)
       puts "Playing <#{song}>"
       return
     end
-
     if song.to_i >= 1 && song.to_i <= songs.size #(1..songs.length).include?(song)
       puts "Playing <#{songs[song.to_i - 1]}>"
       return
     end
-
   puts "Invalid input, please try again"
-
 end
