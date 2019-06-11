@@ -26,7 +26,7 @@ def play (songs)
     puts "Playing <#{song}>"
     return
   end
-  if (1..songs.length).include?(song)
+  if song >= 1 && song <= songs.size #(1..songs.length).include?(song)
     puts "Playing <#{songs[song - 1]}>"
     return
   end
